@@ -19,7 +19,7 @@ const Intro: FC<IntroProps> = () => {
         {/* --- Top Content Area --- */}
         <div className="absolute inset-0 pt-4 flex items-start justify-center ">
           {/* Apply topBlockVariants here */}
-          <motion.div className="w-full px-4 sm:px-8 relative">
+          <motion.div className="w-full px-4 sm:px-16 relative">
             <div className="relative flex flex-col md:flex-row md:items-baseline min-[1512px]:gap-12 min-[1920px]:gap-16 font-semibold text-[#1A1A1A]">
               {/* Parent div with overflow hidden acts as mask */}
               <div style={{ overflow: "hidden" }}>
@@ -33,7 +33,7 @@ const Intro: FC<IntroProps> = () => {
                   }}
                   className="  min-[1512px]:text-[100px] min-[1920px]:text-[120px] leading-tight "
                 >
-                  Barry
+                  BARRY
                 </motion.h1>
               </div>
 
@@ -49,7 +49,7 @@ const Intro: FC<IntroProps> = () => {
                   }}
                   className="leading-tight  min-[1512px]:text-[100px] min-[1920px]:text-[120px]  text-right md:text-left"
                 >
-                  Song
+                  SONG
                 </motion.h1>
               </div>
               {/* Wrap Developer div/h1 and apply variants */}
@@ -61,7 +61,7 @@ const Intro: FC<IntroProps> = () => {
                   ease: "easeOut",
                   delay: initialLoadDelay,
                 }}
-                className="w-16 md:w-24 h-2 mt-8 bg-[#1A1A1A] self-center hidden md:block"
+                className="w-16 md:w-24 h-2  bg-[#1A1A1A] self-center hidden md:block"
               ></motion.div>
               <div className=" right-[21px] text-[#1A1A1A] overflow-hidden">
                 {/* Static line - no animation needed */}
@@ -75,7 +75,7 @@ const Intro: FC<IntroProps> = () => {
                   }}
                   className="min-[1512px]:text-[100px] min-[1920px]:text-[120px]  leading-none text-right md:text-left"
                 >
-                  Developer
+                  DEVELOPER
                 </motion.h1>
               </div>
             </div>
@@ -89,7 +89,7 @@ const Intro: FC<IntroProps> = () => {
                   ease: "easeOut",
                   delay: initialLoadDelay,
                 }}
-                className="absolute right-16 mt-4 z-20"
+                className="absolute right-24 mt-4 z-20"
               >
                 <h1 className="min-[1512px]:text-[100px] min-[1920px]:text-[120px] leading-none md:text-left font-semibold relative">
                   {/* Strikethrough line - updated color */}
@@ -145,7 +145,7 @@ const Intro: FC<IntroProps> = () => {
                   delay: designerFillDelay,
                   ease: "easeInOut",
                 }}
-                className=" text-[#748E99]   w-[400px] min-[1512px]:mr-[55px] min-[1920px]:mr-[140px]  text-left"
+                className=" text-[#748E99]   w-[400px] min-[1512px]:mr-[24px] min-[1920px]:mr-[100px]  text-left"
               >
                 Currently learning web design. As AI evolves, web development
                 and design are converging. My design ability progress: 20%
@@ -156,7 +156,7 @@ const Intro: FC<IntroProps> = () => {
 
         {/* --- Bottom Left Elements --- */}
       </motion.div>
-      <motion.div className="absolute z-15 bottom-4 left-4 sm:bottom-8 sm:left-8 flex items-end space-x-4">
+      <motion.div className="absolute z-15 bottom-4 left-16 sm:bottom-8 sm:left-16 flex items-end space-x-4">
         {/* Wrap Icon and Description div and apply variants */}
         <motion.div
           initial={{ opacity: 1, y: 10, rotate: 0 }}
@@ -185,7 +185,7 @@ const Intro: FC<IntroProps> = () => {
       {/* --- Avatar (Bottom Right) --- */}
       <motion.div
         // variants={bottomBlockVariants} // Use simpler block variant
-        className="absolute bottom-4 z-15 right-4 sm:bottom-8 sm:right-8"
+        className="absolute bottom-4 z-15 right-4 sm:bottom-8 sm:right-16"
       >
         {/* Wrap Avatar and apply variants */}
         <motion.div
