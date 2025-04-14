@@ -154,6 +154,7 @@ const Projects: FC<ProjectsProps> = ({ className, ...props }) => {
     <div
       ref={containerRef}
       className={cn("bg-[#F1F0EC] py-16 overflow-hidden", className)}
+      id="projects"
       {...props}
     >
       {/* Replace the static h2 with AnimatedTextWord */}

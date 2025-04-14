@@ -99,6 +99,7 @@ const About: FC<AboutProps> = ({ className, ...props }) => {
         "bg-black text-white py-16 px-4 sm:px-8 md:px-12 lg:px-16 relative",
         className
       )}
+      id="about"
       {...props}
     >
       {/* Main Title and Subtitle */}

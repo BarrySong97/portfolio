@@ -34,7 +34,7 @@ const contactLinks = [
 
 const Contact: FC<ContactProps> = () => {
   return (
-    <div className="px-16 bg-[#F1F0EC] py-16 min-h-screen">
+    <div id="contact" className="px-16 bg-[#F1F0EC] py-16 min-h-screen">
       <AnimatedTextWord
         text="GET IN TOUCH"
         className="text-6xl mb-12 sm:text-7xl md:text-8xl lg:text-9xl font-bold  uppercase tracking-tight text-right"

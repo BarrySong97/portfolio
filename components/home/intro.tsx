@@ -4,12 +4,28 @@ import Avatar from "@/components/home/Avatar";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import NumberTicker from "@/components/home/NumberTicker";
+import Link from "next/link";
 export interface IntroProps {}
 // Define animation delay constants
 const initialLoadDelay = 3.2;
 const designerFillDelay = 3.3;
 const bottomElementsDelay = 2.0;
 const Intro: FC<IntroProps> = () => {
+  const menus = [
+    {
+      name: "Projects",
+      href: "#projects",
+    },
+
+    {
+      name: "About",
+      href: "#about",
+    },
+    {
+      name: "Contact",
+      href: "#contact",
+    },
+  ];
   return (
     <>
       <motion.div
@@ -185,8 +201,17 @@ const Intro: FC<IntroProps> = () => {
       {/* --- Avatar (Bottom Right) --- */}
       <motion.div
         // variants={bottomBlockVariants} // Use simpler block variant
-        className="absolute bottom-4 z-15 right-4 sm:bottom-8 sm:right-16"
+        className="absolute bottom-4 z-15 right-4 sm:bottom-8 sm:right-16 flex  items-end gap-4" // Add flex layout
       >
+        <p
+          className="mt-2 flex gap-2  text-[#1A1A1A] font-mono" // Style the text
+        >
+          {menus.map((menu) => (
+            <a key={menu.href} href={menu.href}>
+              {menu.name}
+            </a>
+          ))}
+        </p>
         {/* Wrap Avatar and apply variants */}
         <motion.div
           initial={{ opacity: 1, clipPath: "inset(0 100% 0 0)" }}
@@ -199,6 +224,7 @@ const Intro: FC<IntroProps> = () => {
         >
           <Avatar src="/avatar.webp" alt="Barry Song" size={240} />
         </motion.div>
+        {/* Add scroll text below Avatar */}
       </motion.div>
     </>
   );
