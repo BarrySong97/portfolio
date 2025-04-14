@@ -197,7 +197,7 @@ const Intro: FC<IntroProps> = () => {
             ease: "easeOut",
           }}
         >
-          <Avatar src="/avatar.jpeg" alt="Barry Song" size={240} />
+          <Avatar src="/avatar.webp" alt="Barry Song" size={240} />
         </motion.div>
       </motion.div>
     </>

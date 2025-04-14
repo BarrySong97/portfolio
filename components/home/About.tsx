@@ -129,11 +129,11 @@ const About: FC<AboutProps> = ({ className, ...props }) => {
           transition={{
             duration: 1.2,
             ease: "easeInOut",
-            delay: 0.2,
+            delay: 0.4,
           }}
         >
           <Image
-            src="/about-me.png"
+            src="/about-me.webp"
             alt="Portrait describing Barry's focus"
             objectFit="cover"
             width={100}
